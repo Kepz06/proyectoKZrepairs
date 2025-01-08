@@ -53,12 +53,44 @@ main h2 {
 
 }
 
-.imgPlacas {
-    width: 400px;
+.card img {
     height: 400px;
+    width: 400px;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    
 }
 
 
+
+
+.logosMarcas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    height: 200px;
+    align-self: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.logosMarcas img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 
 
