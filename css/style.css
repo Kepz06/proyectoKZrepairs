@@ -121,6 +121,18 @@ main h2 {
 
 
 
+/* MAIN STYLES COMPUTADORAS */
+
+.titComp {
+    display: flex;
+}
+
+.menuCompus {
+    display: flex;
+    padding-left: 60%;
+
+}
+
 /* FOOTER STYLES */
 
 #footer {
