@@ -75,6 +75,7 @@ main h2 {
 
 .container-cardPlacas    {
     display: grid;
+    margin-top: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 20px;
@@ -123,23 +124,98 @@ main h2 {
 
 /* MAIN STYLES COMPUTADORAS */
 
-.titComp {
+.titComp h2 {
     display: flex;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 80%;
 }
+
 
 .menuCompus {
+    display: inline-block;
+    justify-content: right;
+}
+
+
+.container-cardComputadoras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* MAIN STYLES SOBRENOS */
+
+.titSobrenos h2{
     display: flex;
-    padding-left: 60%;
+}
+
+.nosotros img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    display: flex;
+    background-color: darkmagenta;
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    color: white;
+}
+
+p {
+    display: flex;
+    color: white;
+    background-color: gray;
+    margin-top: 10px;
+}
+
+h4 {
+    display: flex;
+    background-color: gray;
+    text-align: center;
+    text-justify: center;
+}
+
+.contactos {
+    width: 250px;
 
 }
 
+.mapa {
+    display: flex;
+    justify-content: end;
+}
+
+
 /* FOOTER STYLES */
+
+#footer  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+}
 
 #footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: darkgrey;
+    background-color: darkgray;
 }
 
 .footerLogo img {
