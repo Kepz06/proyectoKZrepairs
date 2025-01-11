@@ -162,10 +162,17 @@ main h2 {
     display: flex;
 }
 
+.nosotros {
+    display: flex;
+    justify-content: end;
+    
+}
 .nosotros img {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    width: 60%;
+    height: 400px;
+    justify-content: end;
+    padding-right: 20px;
 }
 
 h3 {
@@ -202,14 +209,55 @@ h4 {
 }
 
 
+/* MAIN STYLES PERIFERICOS */
+
+.container-cardPerifericos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menuPeri {
+    display: inline-block;
+    justify-content: right;
+}
+
+
+/* MAIN STYLES COMPONENTES */
+
+.menuComponentes {
+    display: inline-block;
+    justify-content: right;
+}
+
+.container-cardComponentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* FOOTER STYLES */
 
-#footer  {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: darkgray;
-}
 
 #footer {
     display: flex;
