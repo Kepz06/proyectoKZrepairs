@@ -1,0 +1,51 @@
+/* MAIN STYLES SOBRENOS */
+
+.titSobrenos h2{
+    display: flex;
+}
+
+.nosotros {
+    display: flex;
+    justify-content: end;
+    
+}
+.nosotros img {
+    display: flex;
+    width: 60%;
+    height: 400px;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+h3 {
+    display: flex;
+    background-color: darkmagenta;
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    color: white;
+}
+
+p {
+    display: flex;
+    color: white;
+    background-color: gray;
+    margin-top: 10px;
+}
+
+h4 {
+    display: flex;
+    background-color: gray;
+    text-align: center;
+    text-justify: center;
+}
+
+.contactos {
+    width: 250px;
+
+}
+
+.mapa {
+    display: flex;
+    justify-content: end;
+}

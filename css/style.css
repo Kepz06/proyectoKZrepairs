@@ -1,287 +1,254 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 ul {
-    display: inline-block;
+  display: inline-block;
 }
 
 li {
-    list-style: none;
-    color: white;
+  list-style: none;
+  color: white;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #body {
-    background-color: black;
+  background-color: black;
 }
-
-
-
-/* HEADER STYLES */
-.carousel-inner img {
-    width: 200px;
-    height: 500px;
-}
-
-
-
-
-
 
 /* MAIN STYLES */
-
 #main {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
-
-
 main h2 {
-    color: white;
-    background-color: darkmagenta;
+  color: white;
+  background-color: darkmagenta;
 }
 
 #main h2 {
-    display: flex;
-    
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    
-    margin-right: 80%;
-
+  display: flex;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 80%;
 }
 
 .container-cardOfertas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 20px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-
-.container-cardPlacas    {
-    display: grid;
-    margin-top: 30px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    height: 50%;
-    width: 100%;
+.container-cardPlacas {
+  display: grid;
+  margin-top: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
 }
 
 .card img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .info-card h3 {
-    font-size: 110%;
+  font-size: 110%;
 }
 
 .info-card a {
-    font-size: 190%;
+  font-size: 190%;
 }
 
-
 .logosMarcas {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    column-gap: 10px;
-    height: 200px;
-    align-self: center;
-    justify-content: space-around;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  height: 200px;
+  align-self: center;
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .logosMarcas img {
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-
-
-/* MAIN STYLES COMPUTADORAS */
-
-.titComp h2 {
-    display: flex;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-right: 80%;
-}
-
-
-.menuCompus {
-    display: inline-block;
-    justify-content: right;
-}
-
-
-.container-cardComputadoras {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    height: 50%;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-/* MAIN STYLES SOBRENOS */
-
-.titSobrenos h2{
-    display: flex;
-}
-
-.nosotros {
-    display: flex;
-    justify-content: end;
-    
-}
-.nosotros img {
-    display: flex;
-    width: 60%;
-    height: 400px;
-    justify-content: end;
-    padding-right: 20px;
-}
-
-h3 {
-    display: flex;
-    background-color: darkmagenta;
-    height: 40px;
-    width: auto;
-    border-radius: 10px;
-    color: white;
-}
-
-p {
-    display: flex;
-    color: white;
-    background-color: gray;
-    margin-top: 10px;
-}
-
-h4 {
-    display: flex;
-    background-color: gray;
-    text-align: center;
-    text-justify: center;
-}
-
-.contactos {
-    width: 250px;
-
-}
-
-.mapa {
-    display: flex;
-    justify-content: end;
-}
-
-
-/* MAIN STYLES PERIFERICOS */
-
-.container-cardPerifericos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    height: 50%;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.menuPeri {
-    display: inline-block;
-    justify-content: right;
-}
-
 
 /* MAIN STYLES COMPONENTES */
-
 .menuComponentes {
-    display: inline-block;
-    justify-content: right;
+  display: inline-block;
+  justify-content: right;
 }
 
 .container-cardComponentes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    height: 50%;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* MAIN STYLES COMPUTADORAS */
+.titComp h2 {
+  display: flex;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 80%;
+}
+
+.menuCompus {
+  display: inline-block;
+  justify-content: right;
+}
+
+.container-cardComputadoras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* MAIN STYLES PERIFERICOS */
+.container-cardPerifericos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menuPeri {
+  display: inline-block;
+  justify-content: right;
+}
+
+/* MAIN STYLES SOBRENOS */
+.titSobrenos h2 {
+  display: flex;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: end;
+}
+
+.nosotros img {
+  display: flex;
+  width: 60%;
+  height: 400px;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+h3 {
+  display: flex;
+  background-color: darkmagenta;
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  color: white;
+}
+
+p {
+  display: flex;
+  color: white;
+  background-color: gray;
+  margin-top: 10px;
+}
+
+h4 {
+  display: flex;
+  background-color: gray;
+  text-align: center;
+  text-justify: center;
+}
+
+.contactos {
+  width: 250px;
+}
+
+.mapa {
+  display: flex;
+  justify-content: end;
 }
 
 /* FOOTER STYLES */
-
-
 #footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: darkgray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkgray;
 }
 
 .footerLogo img {
-    width: 100px;
-    margin-top: 10px;
+  width: 100px;
+  margin-top: 10px;
 }
 
 .footerNav article h2 {
-    color: darkmagenta;
+  color: darkmagenta;
 }
 
 .footerRedes {
-    color: darkmagenta;
-    font-size: 30px;
+  color: darkmagenta;
+  font-size: 30px;
 }
 
 .footerNav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */

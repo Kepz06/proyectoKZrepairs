@@ -1,0 +1,29 @@
+/* FOOTER STYLES */
+
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgray;
+}
+
+.footerLogo img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.footerNav article h2 {
+    color: darkmagenta;
+}
+
+.footerRedes {
+    color: darkmagenta;
+    font-size: 30px;
+}
+
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,0 +1,22 @@
+/* MAIN STYLES COMPONENTES */
+
+.menuComponentes {
+    display: inline-block;
+    justify-content: right;
+}
+
+.container-cardComponentes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

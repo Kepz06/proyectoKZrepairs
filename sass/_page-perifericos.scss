@@ -1,0 +1,22 @@
+/* MAIN STYLES PERIFERICOS */
+
+.container-cardPerifericos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menuPeri {
+    display: inline-block;
+    justify-content: right;
+}
