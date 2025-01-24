@@ -16,20 +16,32 @@ li {
 
 a {
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+a:hover {
+  border-bottom: 2px solid currentColor;
 }
 
 #body {
   background-color: black;
 }
 
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER STYLES INDEX  */
+.carousel-inner img {
+  width: 200px;
+  height: 500px;
+}
+
 /* MAIN STYLES */
 #main {
   padding-top: 40px;
-}
-
-main h2 {
-  color: white;
-  background-color: darkmagenta;
 }
 
 #main h2 {
@@ -53,6 +65,30 @@ main h2 {
   height: 100%;
 }
 
+.container-cardOfertas, .container-cardPlacas {
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  max-width: 300px;
+  flex: 1 1 300px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
 .container-cardPlacas {
   display: grid;
   margin-top: 30px;
@@ -68,17 +104,44 @@ main h2 {
   width: 100%;
 }
 
+.img-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card img {
-  height: 100%;
+  max-height: 200px;
+  object-fit: cover;
   width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.info-card {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
 }
 
 .info-card h3 {
-  font-size: 110%;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 1.4;
+  color: darkmagenta;
 }
 
-.info-card a {
-  font-size: 190%;
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: rgb(105, 6, 114);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .logosMarcas {
@@ -86,7 +149,7 @@ main h2 {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   column-gap: 10px;
-  height: 200px;
+  height: 100px;
   align-self: center;
   justify-content: space-around;
   justify-items: center;
@@ -96,7 +159,7 @@ main h2 {
   width: 100px;
   height: 100px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 /* MAIN STYLES COMPONENTES */
@@ -174,53 +237,46 @@ main h2 {
 }
 
 /* MAIN STYLES SOBRENOS */
-.titSobrenos h2 {
-  display: flex;
-}
-
-.nosotros {
-  display: flex;
-  justify-content: end;
-}
-
-.nosotros img {
-  display: flex;
-  width: 60%;
-  height: 400px;
-  justify-content: end;
-  padding-right: 20px;
-}
-
-h3 {
-  display: flex;
-  background-color: darkmagenta;
-  height: 40px;
-  width: auto;
-  border-radius: 10px;
-  color: white;
-}
-
-p {
-  display: flex;
-  color: white;
-  background-color: gray;
-  margin-top: 10px;
-}
-
-h4 {
-  display: flex;
-  background-color: gray;
+#quienes-somos {
   text-align: center;
-  text-justify: center;
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: center;
 }
-
-.contactos {
-  width: 250px;
+#quienes-somos h1 {
+  background-color: darkmagenta;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-align: center;
 }
-
-.mapa {
-  display: flex;
-  justify-content: end;
+#quienes-somos .image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#quienes-somos .content {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: white;
+}
+#quienes-somos .content h2 {
+  color: darkmagenta;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+#quienes-somos .contact-info {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: white;
+}
+#quienes-somos .map {
+  margin-top: 20px;
 }
 
 /* FOOTER STYLES */
@@ -229,6 +285,7 @@ h4 {
   justify-content: space-around;
   align-items: center;
   background-color: darkgray;
+  margin-top: 100px;
 }
 
 .footerLogo img {
@@ -238,6 +295,33 @@ h4 {
 
 .footerNav article h2 {
   color: darkmagenta;
+}
+
+.footerNav h2, .footerNav p, .footerNav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.quick-links li {
+  margin: 5px 0;
+}
+
+.quick-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+.footerRedes a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .footerRedes {

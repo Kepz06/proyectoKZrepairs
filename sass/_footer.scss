@@ -6,6 +6,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: darkgray;
+    margin-top: 100px;
 }
 
 .footerLogo img {
@@ -15,6 +16,33 @@
 
 .footerNav article h2 {
     color: darkmagenta;
+}
+
+.footerNav h2, .footerNav p, .footerNav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.quick-links li {
+    margin: 5px 0;
+}
+
+.quick-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.footerRedes a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .footerRedes {

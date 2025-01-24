@@ -1,51 +1,44 @@
 /* MAIN STYLES SOBRENOS */
 
-.titSobrenos h2{
-    display: flex;
-}
-
-.nosotros {
-    display: flex;
-    justify-content: end;
-    
-}
-.nosotros img {
-    display: flex;
-    width: 60%;
-    height: 400px;
-    justify-content: end;
-    padding-right: 20px;
-}
-
-h3 {
-    display: flex;
-    background-color: darkmagenta;
-    height: 40px;
-    width: auto;
-    border-radius: 10px;
-    color: white;
-}
-
-p {
-    display: flex;
-    color: white;
-    background-color: gray;
-    margin-top: 10px;
-}
-
-h4 {
-    display: flex;
-    background-color: gray;
+#quienes-somos {
     text-align: center;
-    text-justify: center;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    text-align: center;
+    h1 {
+        background-color: darkmagenta;
+        color: white; 
+        padding: 10px 20px; 
+        border-radius: 10px; 
+        text-align: center; 
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .content {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 1.1rem;
+        color: white; 
+        h2 {
+            color: darkmagenta;
+            margin-bottom: 10px;
+            white-space: nowrap;
+        }
+    }
+    .contact-info {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        color: white;
+    }
+    .map {
+        margin-top: 20px;
+    }
 }
 
-.contactos {
-    width: 250px;
-
-}
-
-.mapa {
-    display: flex;
-    justify-content: end;
-}
