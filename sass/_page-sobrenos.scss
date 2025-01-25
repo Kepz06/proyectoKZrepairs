@@ -42,3 +42,34 @@
     }
 }
 
+
+@media (max-width: 600px) {
+    .content ul {
+        padding-left: 20px; 
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    #quienes-somos {
+        padding: 20px; 
+    }
+
+    .content {
+        text-align: justify; 
+        padding: 10px; 
+    }
+
+    .content h2, .content p, .contact-info p {
+        margin: 10px 0; 
+    }
+    .contact-info, .map {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 100%; 
+        height: auto; 
+    }
+}

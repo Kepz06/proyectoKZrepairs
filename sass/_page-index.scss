@@ -1,7 +1,7 @@
 /* HEADER STYLES INDEX  */
 .carousel-inner img {
-    width: 200px;
-    height: 500px;
+    width: 100%;
+    max-height: 500px;
 }
 
 
@@ -9,15 +9,20 @@
 
 #main {
     padding-top: 40px;
+    .titlOfertas, .titlPlacas {
+        display: flex;
+        justify-content: center; 
+        border-radius: 10px;
+        margin: 20px auto 10px auto;
+        background-color: darkmagenta;
+        color: white; 
+        padding: 10px 20px; 
+        border-radius: 10px; 
+        text-align: center; 
+    }
+    
 }
 
-#main h2 {
-    display: flex;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-right: 80%;
-}
 
 .container-cardOfertas {
     display: grid;
@@ -30,9 +35,6 @@
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-.container-cardOfertas, .container-cardPlacas {
     margin-bottom: 2rem;
 }
 
@@ -69,6 +71,7 @@
     align-items: center;
     height: 50%;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .img-container {
@@ -90,25 +93,24 @@
     padding: 15px; 
     text-align: center; 
     flex-grow: 1;
-}
-
-.info-card h3 {
-    font-size: 1.2rem; 
-    margin-bottom: 10px; 
-    padding: 10px; 
-    box-sizing: border-box; 
-    line-height: 1.4;
-    color: darkmagenta;
-}
-
-.price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
-    background-color: rgb(105, 6, 114);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    h3 {
+        font-size: 1.2rem; 
+        margin-bottom: 10px; 
+        padding: 10px; 
+        box-sizing: border-box; 
+        line-height: 1.4;
+        color: darkmagenta;
+    }
+    .price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 10px;
+        background-color: #0569eb;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
 }
 
 
@@ -121,11 +123,42 @@
     align-self: center;
     justify-content: space-around;
     justify-items: center;
+    img {
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
 }
 
-.logosMarcas img {
-    width: 100px;
-    height: 100px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+
+@media (max-width: 768px) {
+    .container-cardOfertas, .container-cardPlacas {
+        grid-template-columns: 1fr;
+        row-gap: 30px; 
+    }
+    
+    .logosMarcas {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container-cardOfertas, .container-cardPlacas {
+        column-gap: 10px; 
+    }
+
+    .info-card h3 {
+        font-size: 1rem; 
+    }
+
+    .price {
+        font-size: 1rem; 
+    }
+
+    .logosMarcas img {
+        width: 80px;
+        height: 80px; 
+    }
 }

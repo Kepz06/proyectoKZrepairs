@@ -1,5 +1,17 @@
 /* MAIN STYLES COMPONENTES */
 
+.titComponets {
+    display: flex;
+    justify-content: center; 
+    border-radius: 10px;
+    margin: 20px auto 10px auto;
+    background-color: darkmagenta;
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    text-align: center;
+}
+
 .menuComponentes {
     display: inline-block;
     justify-content: right;
@@ -19,4 +31,25 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container-cardComponentes {
+        grid-template-columns: 1fr; 
+        row-gap: 30px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container-cardComponentes {
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-cardComponentes {
+        grid-template-columns: 1fr 1fr 1fr; 
+        gap: 20px;
+    }
 }
